@@ -1,6 +1,6 @@
 {
   "name": "WI1ReFramework",
-  "description": "Blank Process",
+  "description": "WI1 - Verify Account Positions",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "1.1.6479.13204",
