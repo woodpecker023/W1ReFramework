@@ -50,7 +50,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'ACME-System3.exe ACME'" FileName="ACME-System3.exe" sap:VirtualizedContainerService.HintSize="414.4,248" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="51390a136463130c0e9cf711119d96c5" Selector="&lt;wnd app='acme-system3.exe' ctrlname='Login' /&gt;">
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open System 3 Application" FileName="ACME-System3.exe" sap:VirtualizedContainerService.HintSize="414.4,248" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="51390a136463130c0e9cf711119d96c5" Selector="&lt;wnd app='acme-system3.exe' ctrlname='Login' /&gt;">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

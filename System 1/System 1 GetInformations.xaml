@@ -60,7 +60,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xD;&#xA;Opened Browser window on Work Items&#xD;&#xA;&#xD;&#xA;Result: &#xD;&#xA;Informations about the Work Item (ClientID, Account Number, Account Amount)" DisplayName="System 1 GetTaxId" sap:VirtualizedContainerService.HintSize="436.8,1684" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xA;Opened Browser window on Work Items&#xA;&#xA;Result: &#xA;Informations about the Work Item (ClientID, Account Number, Account Amount)" DisplayName="System 1 GetTaxId" sap:VirtualizedContainerService.HintSize="436.8,1684" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="StrArr" />
       <Variable x:TypeArguments="ui:GenericValue" Name="Informations" />
@@ -100,7 +100,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="414.4,379.2" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="c9af3a4a1be35c335fe604a347ec905b" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser Specific Work Item" sap:VirtualizedContainerService.HintSize="414.4,379.2" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="c9af3a4a1be35c335fe604a347ec905b" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -112,7 +112,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Account Informations" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c1b4feb1a5c13f346260df0e4b27d462" Selector="&lt;webctrl idx='1' tag='P' /&gt;" WaitForReady="INTERACTIVE" />
               </ui:GetValue.Target>
@@ -124,7 +124,7 @@
         </ActivityAction>
       </ui:BrowserScope.Body>
     </ui:BrowserScope>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign DisplayName="Assign StrArr" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[StrArr]</OutArgument>
       </Assign.To>
@@ -132,7 +132,7 @@
         <InArgument x:TypeArguments="s:String[]">[Informations.Split(":")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign DisplayName="Assign clientID" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[clientID]</OutArgument>
       </Assign.To>
@@ -140,7 +140,7 @@
         <InArgument x:TypeArguments="s:String[]">[StrArr(1).Split({" "}, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign DisplayName="Assign out_ClientID" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_ClientID]</OutArgument>
       </Assign.To>
@@ -148,7 +148,7 @@
         <InArgument x:TypeArguments="x:String">[clientID(0)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign DisplayName="Assign accountNumber" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[accountNumber]</OutArgument>
       </Assign.To>
@@ -156,7 +156,7 @@
         <InArgument x:TypeArguments="s:String[]">[StrArr(2).Split({" "}, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+    <Assign DisplayName="Assign out_AccountNumber" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_AccountNumber]</OutArgument>
       </Assign.To>
@@ -164,7 +164,7 @@
         <InArgument x:TypeArguments="x:String">[accountNumber(0)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign DisplayName="Assign accountAmount" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[accountAmount]</OutArgument>
       </Assign.To>
@@ -172,7 +172,7 @@
         <InArgument x:TypeArguments="s:String[]">[StrArr(3).Split({" "}, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+    <Assign DisplayName="Assign out_AccountAmount" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_AccountAmount]</OutArgument>
       </Assign.To>

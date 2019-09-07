@@ -45,7 +45,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="452.8,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign DisplayName="Assign AccountNumberInt" sap:VirtualizedContainerService.HintSize="452.8,60" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[AccountNumberInt]</OutArgument>
       </Assign.To>
@@ -53,7 +53,7 @@
         <InArgument x:TypeArguments="x:Int32">[CINT(in_AccountNumber)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'ClientAcc Acme syst'" sap:VirtualizedContainerService.HintSize="452.8,651.2" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="d8d62af3c0421bb5dde3e8d2a68816de" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window Client Accounts" sap:VirtualizedContainerService.HintSize="452.8,651.2" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="d8d62af3c0421bb5dde3e8d2a68816de" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -66,7 +66,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg1:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Show All'" sap:VirtualizedContainerService.HintSize="336.8,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Show All" sap:VirtualizedContainerService.HintSize="336.8,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -87,7 +87,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg1:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetFullText DisplayName="Get Full Text 'WindowsForms10.SysListV...'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_1" IgnoreHidden="False">
+              <ui:GetFullText DisplayName="Get All Movements" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_1" IgnoreHidden="False">
                 <ui:GetFullText.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0707dccaea90eb00314cd6e9d99ae936" Selector="&lt;wnd ctrlname='listView1' /&gt;" WaitForReady="INTERACTIVE" />
                 </ui:GetFullText.Target>

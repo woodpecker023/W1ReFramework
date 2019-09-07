@@ -56,7 +56,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xD;&#xA;Opened Client Accounts Window in System 3 Application&#xD;&#xA;&#xD;&#xA;Result: &#xD;&#xA;Opened Client Movements Window in System 3 Application" DisplayName="System 3 - Account Movements" sap:VirtualizedContainerService.HintSize="436.8,696" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xA;Opened Client Accounts Window in System 3 Application&#xA;&#xA;Result: &#xA;Opened Client Movements Window in System 3 Application" DisplayName="System 3 - Account Movements" sap:VirtualizedContainerService.HintSize="436.8,696" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="AccountNumberInt" />
     </Sequence.Variables>
@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign AccountNumberInt" sap:VirtualizedContainerService.HintSize="414.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[AccountNumberInt]</OutArgument>
       </Assign.To>
@@ -74,7 +74,7 @@
         <InArgument x:TypeArguments="x:Int32">[CINT(in_AccountNumber)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'ACME-System3.exe ACME'" sap:VirtualizedContainerService.HintSize="414.4,379.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="b11bd3088ca145c1905680c9aaa9ad2a" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccounts' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window Client Accounts" sap:VirtualizedContainerService.HintSize="414.4,379.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="b11bd3088ca145c1905680c9aaa9ad2a" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccounts' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -86,7 +86,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_DOUBLE" DelayMS="500" DisplayName="Double Click" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_DOUBLE" DelayMS="500" DisplayName="Double Click Transaction" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
