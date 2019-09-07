@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>476.8,584</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>476.8,676</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System 3 - GoToClientAccount_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -52,10 +52,11 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System 3 - GoToClientAccount" sap:VirtualizedContainerService.HintSize="436.8,504" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xD;&#xA;Opened Client Details Window in System 3 Application&#xD;&#xA;&#xD;&#xA;Result: &#xD;&#xA;Opened Client Accounts Window in System 3 Application" DisplayName="System 3 - GoToClientAccount" sap:VirtualizedContainerService.HintSize="436.8,596" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'ACME-System3.exe ACME'" sap:VirtualizedContainerService.HintSize="414.4,379.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="98d25b45cd0997cbf85b987101a59401" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientDetails' /&gt;">

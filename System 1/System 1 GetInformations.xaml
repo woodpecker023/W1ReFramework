@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>476.8,1656</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>476.8,1764</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -60,7 +60,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System 1 GetTaxId" sap:VirtualizedContainerService.HintSize="436.8,1576" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xD;&#xA;Opened Browser window on Work Items&#xD;&#xA;&#xD;&#xA;Result: &#xD;&#xA;Informations about the Work Item (ClientID, Account Number, Account Amount)" DisplayName="System 1 GetTaxId" sap:VirtualizedContainerService.HintSize="436.8,1684" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="StrArr" />
       <Variable x:TypeArguments="ui:GenericValue" Name="Informations" />
@@ -71,6 +71,7 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser System 1 GetTaxId - WorkItems" sap:VirtualizedContainerService.HintSize="414.4,332" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="ba9d3602dfd8ef9e42a303b3cb53e4c7" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">

@@ -11,7 +11,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>797.6,1675.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>797.6,1767.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,10 +58,11 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System 3 SearchByClientID" sap:VirtualizedContainerService.HintSize="757.6,1595.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Prerequiste: &#xD;&#xA;Opened Search for ClientID Window in System 3 Application&#xD;&#xA;&#xD;&#xA;Result: &#xD;&#xA;Opened Client Details Window in System 3 Application" DisplayName="System 3 SearchByClientID" sap:VirtualizedContainerService.HintSize="757.6,1687.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window System 3 SearchByClientID - SearchingClient" sap:VirtualizedContainerService.HintSize="735.2,1470.4" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="bda807ba5a2904180d1e6e7133d353d6" Selector="&lt;wnd app='acme-system3.exe' ctrlname='SearchingClient' /&gt;">
