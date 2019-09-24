@@ -133,7 +133,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'list item  18590895'" sap:VirtualizedContainerService.HintSize="414.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
-                <ui:CursorPosition OffsetY="-1" Position="Center">
+                <ui:CursorPosition OffsetY="-2" Position="Center">
                   <ui:CursorPosition.OffsetX>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:CursorPosition.OffsetX>

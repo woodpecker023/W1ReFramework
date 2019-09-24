@@ -60,7 +60,7 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Open and initialize application as needed.&#xA;&#xA;Pre Condition: Google Chrome and Google Chrome Ui Path Studio addon installed on Workstation that is running this process&#xD;&#xA;&#xA;Post Condtion: Applications opened" DisplayName="Initialization Sequence" sap:VirtualizedContainerService.HintSize="336.8,1641.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Open and initialize application as needed.&#xA;&#xA;Pre Condition: Google Chrome and Google Chrome Ui Path Studio addon installed on Workstation that is running this process&#xA;&#xA;Post Condtion: Applications opened" DisplayName="Initialization Sequence" sap:VirtualizedContainerService.HintSize="336.8,1641.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -85,7 +85,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Opening System 3 Application - The reason this application is in the solution folder is because otherwise it will thrown an exception&#xD;&#xA;" DisplayName="Invoke System 3 OpenAplication workflow" sap:VirtualizedContainerService.HintSize="314.4,164" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="System 3\System 3 OpenAplication.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Opening System 3 Application - The reason this application is in the solution folder is because otherwise it will thrown an exception&#xA;" DisplayName="Invoke System 3 OpenAplication workflow" sap:VirtualizedContainerService.HintSize="314.4,164" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="System 3\System 3 OpenAplication.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
@@ -95,7 +95,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Logging to System 3 Application with provided credentials&#xD;&#xA;" DisplayName="Invoke System 3 Login workflow" sap:VirtualizedContainerService.HintSize="314.4,148" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="System 3\System 3 Login.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Logging to System 3 Application with provided credentials&#xA;" DisplayName="Invoke System 3 Login workflow" sap:VirtualizedContainerService.HintSize="314.4,148" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="System 3\System 3 Login.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Password">[Password]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_Username">[Username]</InArgument>
@@ -106,7 +106,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Opening Browser on Acme website - note that Google Chrome addon must be installed&#xD;&#xA;" DisplayName="Invoke System 1 Open Browser workflow" sap:VirtualizedContainerService.HintSize="314.4,148" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="System 1\System 1 Open Browser.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Opening Browser on Acme website - note that Google Chrome addon must be installed&#xA;" DisplayName="Invoke System 1 Open Browser workflow" sap:VirtualizedContainerService.HintSize="314.4,148" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="System 1\System 1 Open Browser.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_System1URL">[in_Config("System1 URL").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
